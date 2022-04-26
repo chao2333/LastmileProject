@@ -30,6 +30,7 @@ class fruitAdapter(val context: Context,val fruitlist:List<Fruit>):
     }
 
     override fun getItemCount(): Int {
+        val bat=2
         return fruitlist.size
     }
 }
