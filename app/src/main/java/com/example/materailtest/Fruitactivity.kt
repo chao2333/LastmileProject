@@ -9,5 +9,7 @@ class Fruitactivity : AppCompatActivity() {
         setContentView(R.layout.activity_fruitactivity)
         val ss=88887990
         val p=298199999
+        val sc=222
+        val asds=1231
     }
 }
