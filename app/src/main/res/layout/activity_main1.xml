@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="10dp"
+            android:background="?attr/colorPrimary"
+            android:layout_marginTop="35dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iconImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nav_icon" />
+
+            <TextView
+                android:id="@+id/mailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="小琪同学我好想爱你呀"
+                android:textColor="#FFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/userText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/mailText"
+                android:text="我爱你"
+                android:textColor="#FFF"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/itembg">
+
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="172dp"
+                    android:layout_height="110dp"
+                    android:padding="5dp"
+                    android:src="@drawable/banana" />
+
+                <LinearLayout
+                    android:layout_width="196dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="191dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="香蕉3元/500g"
+                        android:textColor="#FFDB6F"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/translucent_edit"
+                            android:hint="输入你想要的数量"
+                            android:textStyle="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/itembg">
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="172dp"
+                    android:layout_height="110dp"
+                    android:padding="5dp"
+                    android:src="@drawable/watermelon" />
+
+                <LinearLayout
+                    android:layout_width="196dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="191dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="西瓜2元/500g"
+                        android:textColor="#FFDB6F"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/translucent_edit"
+                            android:hint="输入你想要的数量"
+                            android:textStyle="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/itembg">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="172dp"
+                    android:layout_height="110dp"
+                    android:padding="5dp"
+                    android:src="@drawable/grape" />
+
+                <LinearLayout
+                    android:layout_width="196dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="191dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="葡萄5元/500g"
+                        android:textColor="#FFDB6F"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/translucent_edit"
+                            android:hint="输入你想要的数量"
+                            android:textStyle="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/EmailEdit4"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/translucent_edit"
+                android:hint="请输入配送地址"
+                android:maxLength="16"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textSize="24dp"
+
+                />
+
+            <Button
+                android:id="@+id/order12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/translucent_button"
+                android:text="立即下单"
+                android:textSize="24dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
